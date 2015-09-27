@@ -1,5 +1,7 @@
 tags:
-  - tag1
+  - enumerators
+  - select
+  - detect
 languages:
-  - language1
+  - ruby
 resources: 0
