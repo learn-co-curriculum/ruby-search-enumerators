@@ -28,7 +28,7 @@ end #=> [1,2,3,4,5]
 matches #=> [2,4]
 ```
 
-Implementing a selection routine with a low-level enumerator like `#each` is coslty in a few ways.
+Implementing a selection routine with a low-level enumerator like `#each` is costly in a few ways.
 
 1. We have to maintain state with the local array `matches`.
 2. Our block is complicated with conditional logic that can be implicit with a better enumerator.
