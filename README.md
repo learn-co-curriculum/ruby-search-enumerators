@@ -36,7 +36,7 @@ Implementing a selection routine with a low-level enumerator like `#each` is cos
 
 ## `#select`
 
-When you evoke `#select` on a collection, the return value will be a new array containing all the elements of the collection that cause the block passed to `#select` to return true. That means for each iteration, if the block evaluates to true, the element yielded to that iteration will kept in the return value array.
+When you evoke `#select` on a collection, the return value will be a new array containing all the elements of the collection that cause the block passed to `#select` to return true. That means for each iteration, if the block evaluates to true, the element yielded to that iteration will be kept in the return value array.
 
 ```ruby
 [1,2,3,4,5].select do |number|
