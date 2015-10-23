@@ -75,7 +75,7 @@ Notice also that `#detect` will always return a single object where `#select` wi
 
 ## `#reject`
 
-`#reject` will return an array with the elements that make the block true removed.
+`#reject` will return an array with the elements for which the block is false.
 
 ```ruby
 [1,2].reject{|i| i.even?} #=> [1]
