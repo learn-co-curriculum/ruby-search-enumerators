@@ -5,8 +5,8 @@
 1. Understand return values for enumerators.
 2. Use a truthy or falsey evaluation in a block.
 3. Use `#select` to select matching elements from a collection based on a block.
-3. Use `#detect` to find a matching element from a collection based on a block.
-3. Use `#reject` to filter matching elements from a collection based on a block.
+4. Use `#detect` to find a matching element from a collection based on a block.
+5. Use `#reject` to filter matching elements from a collection based on a block. 
 
 ## Overview
 
@@ -56,7 +56,9 @@ You can see the clarity and expressiveness of this syntax in the short block for
 
 Notice that if no element makes the block evaluate to `true`, an empty array is returned.
 
-## `#detect`
+## `#detect` or `#find`
+
+*NOTE: `detect` and `find` are two names for the same method. For every example below we'll use `detect`, but you can use them interchangeably.*
 
 Whereas `#select` will return all elements from the original collection that cause the block to evaluate to true, `#detect` will only return the first element that makes the block true.
 
