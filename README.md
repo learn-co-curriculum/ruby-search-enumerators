@@ -87,6 +87,8 @@ Notice also that `#detect` will always return a single object where `#select` wi
 
 `#select`, `#detect`, and `#reject` are part of a family of search and filter type enumerators whose purpose is to help you refine a collection to only matching elements. They are way easier to manage than using lower-level methods like `#each` and create meaningful return values based on expressions in a block.
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-search-enumerators' title='Ruby Search Enumerators'>Ruby Search Enumerators</a> on Learn.co and start learning to code for free.</p>
+## Video Review 
+
+* [Yield and Enumerables](https://github.com/learn-co-curriculum/ruby-video-review-yield-and-enumerables)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/ruby-search-enumerators'>Search Enumerators</a> on Learn.co and start learning to code for free.</p>
