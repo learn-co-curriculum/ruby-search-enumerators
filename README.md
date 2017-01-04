@@ -30,7 +30,7 @@ matches #=> [2,4]
 
 Implementing a selection routine with a low-level enumerator like `#each` is costly in a few ways.
 
-1. We have to maintain state with the local array `matches`.
+1. We have to **maintain state** with the local array `matches`.  (I believe this is the first time seeing this concept - and I don't know what it means.  Flatiron curriculum should include some explanation here?)
 2. Our block is complicated with conditional logic that can be implicit with a better enumerator.
 3. Our code lacks intention and clear semantics. If we mean, `#find_all` or `#select`, why don't we just say that?
 
@@ -92,3 +92,5 @@ Notice also that `#detect` will always return a single object where `#select` wi
 * [Yield and Enumerables](https://www.youtube.com/watch?v=t2A6xPbh0I8&feature=youtu.be)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/ruby-search-enumerators'>Search Enumerators</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/ruby-search-enumerators'>Search Enumerables</a> on Learn.co and start learning to code for free.</p>
