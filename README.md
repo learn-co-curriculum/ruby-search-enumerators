@@ -66,6 +66,10 @@ Whereas `#select` will return all elements from the original collection that cau
 [1,2,3].detect{|i| i.odd?} #=> 1
 ```
 
+```ruby
+[1,2,3].find{|i| i.odd?} #=> 1
+```
+
 As you can see, even though both `1` and `3` would cause the block to evaluate to true, because `1` is first in the array, it alone is returned.
 
 ```ruby
