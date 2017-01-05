@@ -66,6 +66,10 @@ Whereas `#select` will return all elements from the original collection that cau
 [1,2,3].detect{|i| i.odd?} #=> 1
 ```
 
+```ruby
+[1,2,3].find{|i| i.odd?} #=> 1
+```
+
 As you can see, even though both `1` and `3` would cause the block to evaluate to true, because `1` is first in the array, it alone is returned.
 
 ```ruby
@@ -92,3 +96,5 @@ Notice also that `#detect` will always return a single object where `#select` wi
 * [Yield and Enumerables](https://www.youtube.com/watch?v=t2A6xPbh0I8&feature=youtu.be)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/ruby-search-enumerators'>Search Enumerators</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/ruby-search-enumerators'>Search Enumerables</a> on Learn.co and start learning to code for free.</p>
