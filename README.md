@@ -30,7 +30,10 @@ matches #=> [2,4]
 
 Implementing a selection routine with a low-level enumerator like `#each` is costly in a few ways.
 
-1. We have to maintain state with the local array `matches`.
+1. We have to hang on to the matches within the local array `matches`.
+   Programmers use the phrase **maintain state** to refer to this task. Cars
+   can be in a state like "Reverse, Drive, Neutral". Our `matches` array has
+   states of "Empty, `[2]`, `[2,4]`".
 2. Our block is complicated with conditional logic that can be implicit with a better enumerator.
 3. Our code lacks intention and clear semantics. If we mean, `#find_all` or `#select`, why don't we just say that?
 
@@ -64,6 +67,10 @@ Whereas `#select` will return all elements from the original collection that cau
 
 ```ruby
 [1,2,3].detect{|i| i.odd?} #=> 1
+```
+
+```ruby
+[1,2,3].find{|i| i.odd?} #=> 1
 ```
 
 As you can see, even though both `1` and `3` would cause the block to evaluate to true, because `1` is first in the array, it alone is returned.
