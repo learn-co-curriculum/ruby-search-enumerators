@@ -93,9 +93,3 @@ Notice also that `#detect` will always return a single object where `#select` wi
 ## Conclusion
 
 `#select`, `#detect`, and `#reject` are part of a family of search and filter type enumerators whose purpose is to help you refine a collection to only matching elements. They are way easier to manage than using lower-level methods like `#each` and create meaningful return values based on expressions in a block.
-
-## Video Review 
-
-* [Yield and Enumerables](https://www.youtube.com/watch?v=t2A6xPbh0I8&feature=youtu.be)
-
-
